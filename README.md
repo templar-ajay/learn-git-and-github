@@ -3,6 +3,7 @@
 use this repo  to learn and revise git commands 
 =======
 **Staging Files**
+
 git add --all
 git add -A
 git add . // the period is the shortcut in linux to access the current directory
@@ -27,18 +28,22 @@ git commit -m "first commit" // -m for specifyinga commit message
 - staged
 
 **Viewing Satus**
+
 git status
 
 **Restoring Files**
+
 git restore .
 git checkout .
 
 **Why Ignore Files**
+
 -Sensitive info // authentication tokens, api keys , passwords
 -Personal Notes // to-do items
 -System Files // mac uses a .DS_store file , vs code uses a .vscode file to save local preferences
 
 **.gitignore**
+
 .DS_Store
 .vscode/
 .authentication.js
@@ -48,12 +53,15 @@ notes/
 #git by default doesn't track .md files
 
 **Global Ignore File**
+
 git config --global core.excludesfile [file]
 
 **Clearing the Cache**
+
 git rm -r --cached . #rm tells to remove -r tells to remove recursively -used to delete multiple files
 
 **Deleting and Renaming Files**
+
 git rm <file-name>
 git mv <file-name> <new-file-name> // used to rename or movefiles
 
@@ -62,12 +70,14 @@ git mv <file-name> <new-file-name> // used to rename or movefiles
 git log --oneline // compact view of git logs
 
 **Differences**
+
 git diff
 git diff --color-words
 
 # better alternative - Git Lens extension
 
 **Changing History**
+
 git commit --amend
 git commit --am "New Commit message"
 git commit --amend --no-edit
@@ -86,30 +96,37 @@ git rebase <branch>/<commit>
 # git rebase -i --root
 
 **Branches**
+
 git branch
 
 **copying a branch**
+
 git switch -c NAME //here -c copies the current branch to new branch with name = NAME
 # git checkout -b NAME
 
 **Switch Branch**
+
 git switch <branch-name>
 
 **Merging**
+
 git merge <branch-name> //mergers the <branch-name> branch in current branch.
 
 **Deleting a Branch**
+
 git branch --delete NAME
 # git branch -d NAME
 # git branch -D NAME
 
 **Git Flow**
+
 - Feature/Fix Branch
 - Make Changes
 - Merge to Master
 - Delete old branch
 
 **Stashing Code**
+
 git stash 
 # git stash list 
 //shows the list of stashes
@@ -123,6 +140,7 @@ git stash
 
 
 **Git Clean**
+
 git clean
 git clean -n # dry run 
 git clean -d # directories
@@ -133,12 +151,14 @@ git clean -fd # will remove FAkeDocs directory
 // can also try out "-i" with "-d"
 
 **GitHub**
+
 # Cloud Repository 
 # Collaborative Development
 # Project Management
 create issues and assign them to developers
 
 **working with github**
+
 # set up remote
 # Push 
 # Fetch / Pull
@@ -150,6 +170,7 @@ git rename OLDNAME NEWNAME
 git remote -v
 
 **Git Push**
+
 # git push REMOTE BRANCH
 // git push --set-upstream-to origin main
 # git push -u origin main # --set-upstream
