@@ -1,5 +1,5 @@
 # use this repo  to learn and revise git commands 
-=======
+
 **Staging Files**
 
 - git add --all
