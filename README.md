@@ -1,4 +1,3 @@
-<<<<<<< README.md
 # learn-git-and-github
 
 use this repo  to learn and revise git commands 
@@ -157,5 +156,3 @@ git remote -v
 // git push --all
 // git branch --set-upstream-to <origin/remote-branch> 
 
-
->>>>>>> notes.md
