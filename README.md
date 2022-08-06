@@ -1,4 +1,4 @@
-# use this repo  to learn and revise git commands 
+# Use this repo to learn and revise git commands 
 
 **Staging Files**
 
