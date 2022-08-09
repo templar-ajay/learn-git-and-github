@@ -207,4 +207,14 @@ Fetch - downloads information from the remote
 
 Pull - git pull
 
+1. git clone "url + .git"
+   ex- git clone https://github.com/templar-command0/multiple-products-page.git
+
+2. git fetch
+3. git branch // shows branches on local
+4. git branch -a //shows all branches on local and remote
+5. git pull
+6. git branch --set-upstream-to=origin/main main
+7. git pull
+
 _maintained by - Ajay_
