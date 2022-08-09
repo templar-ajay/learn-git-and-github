@@ -1,12 +1,12 @@
-# Use this repo to learn and revise git commands 
+# Use this repo to learn and revise git commands
 
 **Staging Files**
 
 - git add --all
 - git add -A
-- git add . 
-// the period is the shortcut in linux to access the current directory
-**Commit**
+- git add .
+  // the period is the shortcut in linux to access the current directory
+  **Commit**
 - git commit -m "first commit" // -m for specifyinga commit message
 
 **Git environments**
@@ -17,8 +17,8 @@
 
 **Files States**
 
-- tracked files *files present in previous commit*
-- untracked files *files not present in previous commit*
+- tracked files _files present in previous commit_
+- untracked files _files not present in previous commit_
 
 **Tracked Files**
 
@@ -50,7 +50,7 @@ node_modules
 notes/
 \*\*/\*todo.md //here backward slashes are used to tell eiditor to not treat asterisk specially
 
-*git by default doesn't track .md files*
+_git by default doesn't track .md files_
 
 **Global Ignore File**
 
@@ -58,27 +58,27 @@ notes/
 
 **Clearing the Cache**
 
-- git rm -r --cached . 
+- git rm -r --cached .
 
-*rm tells to remove -r tells to remove recursively -used to delete multiple files*
+_rm tells to remove -r tells to remove recursively -used to delete multiple files_
 
 **Deleting and Renaming Files**
 
 git rm <file-name>
 git mv <file-name> <new-file-name> // used to rename or movefiles
 
-*for example to move index.html to docs/index.html -$ git mv index.hmtl docs/index.html*
+_for example to move index.html to docs/index.html -$ git mv index.hmtl docs/index.html_
 
-git log --oneline  
+git log --oneline
 
-*compact view of git logs*
+_compact view of git logs_
 
 **Differences**
 
 - git diff
 - git diff --color-words
 
-*better alternative - Git Lens extension*
+_better alternative - Git Lens extension_
 
 **Changing History**
 
@@ -91,7 +91,7 @@ git log --oneline
 then stage the changes
 and commit them
 
-*example -$ git reset 782b1a4*
+_example -$ git reset 782b1a4_
 
 **Rebasing**
 
@@ -132,50 +132,52 @@ and commit them
 
 **Stashing Code**
 
-git stash 
-- git stash list 
+git stash
 
-*shows the list of stashes*
+- git stash list
 
-- git stash apply 
+_shows the list of stashes_
 
-*applies the changes of the stash and preserves the stash*
+- git stash apply
 
-- git stash pop 
+_applies the changes of the stash and preserves the stash_
 
-*applies the changes of the stash and deletes the stash from the stash list*
+- git stash pop
 
-- git restore . 
+_applies the changes of the stash and deletes the stash from the stash list_
 
-*restores the code to original by removing stash changes*
+- git restore .
 
+_restores the code to original by removing stash changes_
 
 **Git Clean**
 
 - git clean
-- git clean -n // dry run 
+- git clean -n // dry run
 - git clean -d // directories
 - git clean -f // force
 
 for example to remove FAkeDocs/jj.txt
-- git clean -fd 
 
-*will remove FAkeDocs directory - can also try out "-i" with "-d"*
+- git clean -fd
+
+_will remove FAkeDocs directory - can also try out "-i" with "-d"_
 
 **GitHub**
 
--  Cloud Repository 
--  Collaborative Development
+- Cloud Repository
+- Collaborative Development
 - Project Management
-*create issues and assign them to developers*
+  _create issues and assign them to developers_
 
 **working with github**
 
 - set up remote
-- Push 
+- Push
 - Fetch / Pull
 
 **Remotes**
+
 - git remote add NAME url
 - git remote remove NAME
 - git rename OLDNAME NEWNAME
@@ -187,11 +189,11 @@ for example to remove FAkeDocs/jj.txt
 - git push --set-upstream-to origin main
 - git push -u origin main // --set-upstream
 - git push --all
-- git branch --set-upstream-to <origin/remote-branch> 
+- git branch --set-upstream-to <origin/remote-branch>
 
 **Managing Projects**
 
-- Contributors 
+- Contributors
 - Issues
 - Labels
 - Milestones
@@ -201,10 +203,8 @@ for example to remove FAkeDocs/jj.txt
 
 Clone - make a copy on the repository on our local machine
 
-Fetch - downloads information from the remote 
+Fetch - downloads information from the remote
 
 Pull - git pull
 
-
-
-*maintained by - Ajay*
+_maintained by - Ajay_
