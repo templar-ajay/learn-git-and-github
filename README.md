@@ -207,4 +207,6 @@ Fetch - downloads information from the remote
 
 Pull - git pull
 
+**PULL REQUESTS**
+
 _maintained by - Ajay_
