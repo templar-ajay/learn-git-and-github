@@ -191,7 +191,7 @@ _will remove FAkeDocs directory - can also try out "-i" with "-d"_
 - git push --all
 - git branch --set-upstream-to <origin/remote-branch>
 
-**Managing Projects**
+**Organizing Projects**
 
 - Contributors
 - Issues
@@ -206,7 +206,5 @@ Clone - make a copy on the repository on our local machine
 Fetch - downloads information from the remote
 
 Pull - git pull
-
-**PULL REQUESTS**
 
 _maintained by - Ajay_
