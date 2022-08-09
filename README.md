@@ -189,3 +189,22 @@ for example to remove FAkeDocs/jj.txt
 - git push --all
 - git branch --set-upstream-to <origin/remote-branch> 
 
+**Managing Projects**
+
+- Contributors 
+- Issues
+- Labels
+- Milestones
+- Projects
+
+**Syncing GitHub**
+
+Clone - make a copy on the repository on our local machine
+
+Fetch - downloads information from the remote 
+
+Pull - git pull
+
+
+
+*maintained by - Ajay*
