@@ -329,4 +329,64 @@ Pull - git pull
 6. git branch --set-upstream-to=origin/main main
 7. git pull
 
-_maintained by - Ajay_
+
+# Working with `.md` markdown files 
+
+**Add Heading**
+\# means <h1> heading
+\#\# means <h2> heading which is smaller than h2
+\#\#\#\#\#\# means <h6> heading which is the smallest 
+
+examples of h1 heading 
+
+# H1 heading 
+## h2 heading 
+### h3 heading 
+#### h4 heading
+###### h6 heading 
+
+**images**
+
+```text
+![alternate text here](https://www.imageUrlHere.com)
+```
+if you don't use the ! sign at the start then it will show as a link with the alternate text as link name and image url as the href of the link
+
+for example-
+
+```
+[this is my image link](https://avatars.githubusercontent.com/u/100400299?s=400&u=014eefa677c44994f49f819fd0d24a60b7f05943&v=4)
+```
+the above code will render like this - 
+[this is my image link](https://avatars.githubusercontent.com/u/100400299?s=400&u=014eefa677c44994f49f819fd0d24a60b7f05943&v=4)
+
+```
+### [My Github Profile Link](https://github.com/templar-command0/)
+```
+this code will render this 
+### [My Github Profile](https://github.com/templar-command0/)
+
+**create ordered and unordered lists**
+```
+- Unordered list Item 
+- Unordered list second item 
+  - unordered sub list 
+  - unordered sub list item 2
+
+1. ordered list item1 
+  1. ordered sub-list item 1
+  2. orderd sub-list item 2 
+```
+
+below is the depiction of the above code
+
+- Unordered list Item 
+- Unordered list second item 
+  - unordered sub list 
+  - unordered sub list item 2
+
+1. ordered list item1.
+2. ordered list item2
+  1. ordered sub-list item 1
+  2. orderd sub-list item 2 
+
