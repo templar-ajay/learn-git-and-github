@@ -20,11 +20,12 @@ to open in code run -
 
 then paste the following code at the end of the file -
 
-<code>
-if [ -f ~/.git-completion.bash ]; then <br/>
-  . ~/.git-completion.bash <br/>
+````bash
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash 
 fi
-</code>
+````
+
 
 autocomplete suggestions are now enabled in git :wink:
 
