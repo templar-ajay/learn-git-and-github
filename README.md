@@ -1,5 +1,116 @@
 # Use this repo to learn and revise git commands
 
+**Installing Git**
+
+on linux
+`sudo pacman -S git`
+
+adding git-autocomplete.bash to profiles.bash for git to support auto completion in git 
+
+1. copy the git-completion.bash file from github to local machine in `home` directory with this command - 
+`curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash`
+
+2. find `.bash_profile` in home directory -
+`cd`
+`ls`
+now check if there's a `.bash_profile` file , if yes then open it with code or nano in command line - 
+to open in code run -
+
+`code  .bash_profile`
+
+then paste the following code at the end of the file -
+
+<code>
+if [ -f ~/.git-completion.bash ]; then <br>
+  . ~/.git-completion.bash <br>
+fi
+</code>
+
+autocomplete suggestions are now enabled in git :wink:
+
+**Git configure**
+
+open command line and type - 
+
+3 places to config git 
+- --system configures the setting systemwide for all users
+- --global configure the setting for the current user on his all repos
+- --local configures the setting only on the current project
+
+`git config --global user.name "*enter-your-github-username-here*>"`
+
+`git config --global user.email "*enter your github email here*"`
+
+`git config --global color.ui true` to use colors in git shell (improvse readablility)
+
+`git config --global core.editor "code --wait"` sets up code as default text editor 
+
+`git config --global credential.helper store` stores the PAT on the first time you enter it after running this command , and uses it to automatically authenitcate your command line with github so that you don't have to manually enter it every time you make a pull or push request
+
+now for example lets clone a repo to our local machine from github
+
+copy the github repo url and add ".git" at the end of it
+
+now the url is https://www.github.com/example-user/example-project.git
+
+copy this url to the clipboard .
+
+on the command line navigate to the folder where you want to store the repos of github , for me it's the `~/repos` folder
+
+`cd repos/`
+
+then run 
+
+`git clone *paste the url from clipboard here*`
+
+example - `git clone https://github.com/templar-command0/learn-git-and-github.git`
+
+this will clone the repo locally in a folder and name the folder with the project name 
+in my case the folder path is `~/repos/learn-git-and-github`
+
+then enter the project using 
+
+`cd *project-name*`
+
+example `cd learn-git-and-github`
+
+then follow the below tutorial to generate your PAT to access github from command line.
+
+**Accessing Github from Command Line using PAT**
+
+- goto github.com 
+- click on dropdown on topright of your screen on side of your profile pic -> select settings
+
+- scroll to the bottom of the left panel and select `developer settings`
+
+- then select personal accesss tokens
+- and create a token with repo permission 
+- i also give it delte repo permission
+then copy the generated token to clipboard.
+
+go back to the command line and make sure you are in your project folder , to check run 
+
+`pwd`
+
+it shows the path of the directory you are currently in 
+
+then run 
+
+`git push`
+
+it will prompt you for the user name 
+enter your username
+don't enter your password
+enter your PAT instead , paste it by ctrl+shift+v
+and press enter
+
+if it succeeds then run the git push command again and see that it doesn't ask for authentication again 
+
+it it fails check the PAT you copied , if you lost it by accident 
+follow the **Accessing Github from Command Line using PAT** again to generate a new PAT and enter it again it should work.
+
+
+
 **Staging Files**
 
 - git add --all
